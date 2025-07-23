@@ -1,0 +1,22 @@
+# docker-compose.yml
+# Defines the services, networks, and volumes for the application.
+# This version only runs the MySQL database.
+version: '3.8'
+
+services:
+  # MySQL database service
+  mysql_db:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # In a real project, use Docker secrets
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3307:3306" # Exposes the MySQL port to the host machine
+    healthcheck:
+        test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+        timeout: 20s
+        retries: 10
