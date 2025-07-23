@@ -83,7 +83,7 @@ After running the migrations for both service1 and service2, the mydatabase data
 Connecting to the Database from Your Host
 You can connect to the MySQL database running inside the Docker container from your host machine using any standard SQL client or the command line.
 
-Connection Details:
+### Connection Details:
 
 - Host: 127.0.0.1
 - Port: 3307
