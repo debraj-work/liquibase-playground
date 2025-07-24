@@ -72,7 +72,7 @@ The script will spin up a temporary Liquibase container, connect it to the runni
 
 ## Final Database Schema
 
-After running the migrations for both service1 and service2, the mydatabase database will contain the following tables:
+After running the migrations for both `service1` and `service2`, the `mydatabase` database will contain the following tables:
 
 - `service1_data`: Created by service1's migration. Contains data specific to service 1.
 - `service2_status`: Created by service2's migration. Contains status information for service 2.
