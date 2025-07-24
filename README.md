@@ -32,7 +32,7 @@ The project is organized to separate changelogs by service, promoting a modular 
 ## Getting Started
 Follow these steps to get the database running and apply the schema migrations.
 
-Step 1: Start the MySQL Database
+**Step 1**: Start the MySQL Database
 Navigate to the root directory of this project in your terminal and start the MySQL container using Docker Compose.
 
 ```
@@ -41,14 +41,14 @@ docker-compose up -d
 
 This command starts a MySQL 8.0 server in a detached container. The database will be available on your host machine at port 3307 to avoid conflicts with any local MySQL installations.
 
-Step 2: Make the Runner Script Executable
+**Step 2**: Make the Runner Script Executable
 You only need to do this once. Grant execute permissions to the `runner.sh` script.
 
 ```
 chmod +x runner.sh
 ```
 
-Step 3: Run the Database Migrations
+**Step 3**: Run the Database Migrations
 Use the `runner.sh` script to apply the database changes for each service.
 
 To run migrations for `service1`:
