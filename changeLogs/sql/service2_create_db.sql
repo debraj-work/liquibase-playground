@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
--- changeset service2:debraj.manna@nexla.com:JIRA:1
+-- changeset debraj.manna@nexla.com:JIRA_ID1-1
 -- comment: Create the service2_status table
 CREATE TABLE service2_status (
     id INT PRIMARY KEY AUTO_INCREMENT,
